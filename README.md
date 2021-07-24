@@ -1,4 +1,6 @@
-<h1><center><b><a href="https://github.com/SuLingGG/OpenWrt-Rpi">OpenWrt-Rpi</a></b></center></h1>
+<h1><center><b><a href="https://github.com/SuLingGG/OpenWrt-Rpi">OpenWrt-Rpi</a> with HelloWorld (luci-app-vssr)</b></center></h1> 
+
+## 本fork添加了Hello World工具 https://github.com/jerrykuku/luci-app-vssr
 
 ## 快速通道
 
