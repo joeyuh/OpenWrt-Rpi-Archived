@@ -13,7 +13,7 @@ on:
     types: [lean, x86_64]
   workflow_dispatch:
   schedule:
-    - cron: 0 18 * * *
+    - cron: 0 18 * * 1
 #  watch:
 #    types: started
 
@@ -32,7 +32,8 @@ env:
 jobs:
   Build:
     runs-on: ubuntu-18.04
-
+    timeout-minutes: 420
+    
     outputs:
       OPENWRTROOT: ${{ steps.update.outputs.OPENWRTROOT }}
       PLATFORM: ${{ steps.compile.outputs.PLATFORM }}
