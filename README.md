@@ -1,4 +1,4 @@
-<h1><center><b><a href="https://github.com/SuLingGG/OpenWrt-Rpi">OpenWrt-Rpi</a> with HelloWorld (luci-app-vssr)</b></center></h1> 
+<h1><center><b><a href="https://github.com/joeyuh/OpenWrt-Rpi">OpenWrt-Rpi</a> with HelloWorld (luci-app-vssr)</b></center></h1> 
 
 ## 本fork添加了Hello World工具 https://github.com/jerrykuku/luci-app-vssr
 
@@ -18,7 +18,7 @@
 - 预置最新版 Clash 核心、预置 oh-my-zsh 以最大程度减少配置成本
 - 预置所有 kmod ipk 软件包于固件内，预配置本地 opkg 软件源，远离 kmod 冲突
 - 比较全面的 IPV6 支持，固件内置 IPV6 CLI 配置工具，可快速安装/卸载/配置 IPV6
-- 每日凌晨 2:00 拉取最新 OpenWrt 源码及社区插件源码编译并提供分流下载，确保始终获得最新体验
+- 每日凌晨 2:00 拉取最新 OpenWrt 源码及社区插件源码编译并提供分流下载，确保始终获得最新体验 (x86_64 6:00 编译)
 - 提供 packages-server (包含 WEB 服务器的软件包归档)，可在 Windows 下快速建立局域网软件源
 - 对于高级用户，提供 OpenWrt Image Builder、OpenWrt SDK、OpenWrt Tool Chain、dl 归档文件
 - 若在固件使用前与使用过程中遇到任何功能问题，请先查阅本文所述内容，若仍没有得到满意答案，可以在此项目中提交 Issues 或通过以下方式咨询:
@@ -29,17 +29,16 @@
 
 ## 设备支持情况
 
-|           支持设备/平台           |                          编译结果页                          |                          下载页                           |
-| :-------------------------------: | :----------------------------------------------------------: | :-------------------------------------------------------: |
-|              竞斗云               | [🔗](https://github.com/SuLingGG/OpenWrt-Rpi/actions/workflows/build-gdock-lean-openwrt.yml?query=is%3Asuccess) | [🔗](https://openwrt.cc/releases/targets/ipq40xx/generic/) |
-|             树莓派 1B             | [🔗](https://github.com/SuLingGG/OpenWrt-Rpi/actions/workflows/build-rpi1-lean-openwrt.yml?query=is%3Asuccess) | [🔗](https://openwrt.cc/releases/targets/bcm27xx/bcm2708/) |
-|             树莓派 2B             | [🔗](https://github.com/SuLingGG/OpenWrt-Rpi/actions/workflows/build-rpi2-lean-openwrt.yml?query=is%3Asuccess) | [🔗](https://openwrt.cc/releases/targets/bcm27xx/bcm2709/) |
-|           树莓派 3B/3B+           | [🔗](https://github.com/SuLingGG/OpenWrt-Rpi/actions/workflows/build-rpi3-lean-openwrt.yml?query=is%3Asuccess) | [🔗](https://openwrt.cc/releases/targets/bcm27xx/bcm2710/) |
-|             树莓派 4B             | [🔗](https://github.com/SuLingGG/OpenWrt-Rpi/actions/workflows/build-rpi4-lean-openwrt.yml?query=is%3Asuccess) | [🔗](https://openwrt.cc/releases/targets/bcm27xx/bcm2711/) |
-| NanoPi R2S/R4S & OrangePi R1 Plus | [🔗](https://github.com/SuLingGG/OpenWrt-Rpi/actions/workflows/build-rockchip-lean-openwrt.yml?query=is%3Asuccess) | [🔗](https://openwrt.cc/releases/targets/rockchip/armv8/)  |
-|           x86_64 (64位)           | [🔗](https://github.com/SuLingGG/OpenWrt-Rpi/actions/workflows/build-x86_64-lean-openwrt.yml?query=is%3Asuccess) |     [🔗](https://openwrt.cc/releases/targets/x86/64/)      |
-|        x86_generic (32位)         | [🔗](https://github.com/SuLingGG/OpenWrt-Rpi/actions/workflows/build-x86_generic-lean-openwrt.yml?query=is%3Asuccess) |   [🔗](https://openwrt.cc/releases/targets/x86/generic/)   |
-
+|           支持设备/平台           |                          编译结果页                          |
+| :-------------------------------: | :----------------------------------------------------------: |
+|              竞斗云               | [🔗](https://github.com/joeyuh/OpenWrt-Rpi/actions/workflows/build-gdock-lean-openwrt.yml?query=is%3Asuccess) |
+|             树莓派 1B             | [🔗](https://github.com/joeyuh/OpenWrt-Rpi/actions/workflows/build-rpi1-lean-openwrt.yml?query=is%3Asuccess) |
+|             树莓派 2B             | [🔗](https://github.com/joeyuh/OpenWrt-Rpi/actions/workflows/build-rpi2-lean-openwrt.yml?query=is%3Asuccess) |
+|           树莓派 3B/3B+           | [🔗](https://github.com/joeyuh/OpenWrt-Rpi/actions/workflows/build-rpi3-lean-openwrt.yml?query=is%3Asuccess) |
+|             树莓派 4B             | [🔗](https://github.com/joeyuh/OpenWrt-Rpi/actions/workflows/build-rpi4-lean-openwrt.yml?query=is%3Asuccess) |
+| NanoPi R2S/R4S & OrangePi R1 Plus | [🔗](https://github.com/joeyuh/OpenWrt-Rpi/actions/workflows/build-rockchip-lean-openwrt.yml?query=is%3Asuccess) |
+|           x86_64 (64位)           | [🔗](https://github.com/joeyuh/OpenWrt-Rpi/actions/workflows/build-x86_64-lean-openwrt.yml?query=is%3Asuccess) |
+|        x86_generic (32位)         | [🔗](https://github.com/joeyuh/OpenWrt-Rpi/actions/workflows/build-x86_generic-lean-openwrt.yml?query=is%3Asuccess) |
 ## 相关文档
 
 由于内容过多，为增加可读性，现将各板块内容分拆为文档分篇加以介绍:
